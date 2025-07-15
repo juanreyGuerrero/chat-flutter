@@ -16,7 +16,7 @@ const List<Color> _colorTheme = [
 class AppTheme {
   final int selectedColor;
 
-  AppTheme({this.selectedColor = 0})
+  AppTheme({this.selectedColor = 2})
       : assert(
           selectedColor >= 0 && selectedColor < _colorTheme.length,
           "selectedColor debe estar entre 0 y ${_colorTheme.length - 1}",

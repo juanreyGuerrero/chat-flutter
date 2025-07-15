@@ -5,8 +5,7 @@ class MyMessageBubblr extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-final colors = Theme.of(context).colorScheme;
+    final colors = Theme.of(context).colorScheme;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -14,14 +13,17 @@ final colors = Theme.of(context).colorScheme;
         Container(
           decoration: BoxDecoration(
             color: colors.primary,
-            borderRadius: BorderRadius.circular(1),
+            borderRadius: BorderRadius.circular(20),
           ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal:20, vertical: 10 ),
-            child: Text("hola amor como estas", style: TextStyle(color: Colors.white),),
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text(
+              "hola amor como estas",
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ),
-        const SizedBox(height:10)
+        const SizedBox(height: 10),
       ],
     );
   }

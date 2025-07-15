@@ -11,10 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Cambia este número para cambiar el color del tema
+    const int selectedColorIndex = 0; // 0=Morado, 1=Azul, 2=Rosa, 3=Naranja, 4=Verde azulado, 5=Verde
+    
     return MaterialApp(
       title: 'Mi amorcito',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 20).theme(),
+      theme: AppTheme(selectedColor: selectedColorIndex).theme(),
       home: const ChatScreen(),
     );
   }
